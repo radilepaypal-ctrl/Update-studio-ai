@@ -1,11 +1,20 @@
-<div align="center">
+# Timeline Visualizer (React Port)
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+This project is a React port of the original Timeline Visualizer application, rewritten to be a web application using Vite, React, and Tailwind CSS.
 
-  <h1>Built with AI Studio</h2>
+## Features Preserved
+- File importing and local parsing of Timeline exports (`Timeline.json`)
+- Geolocation logic for generating journeys and paths
+- Video rendering and Map tiles configuration
+- Localized strings and formatting (i18n)
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Setup
+```bash
+npm install
+npm run dev
+```
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
-
-</div>
+## Build
+```bash
+npm run build
+```
