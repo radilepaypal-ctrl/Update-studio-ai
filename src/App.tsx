@@ -346,7 +346,7 @@ export default function App() {
   const handleLoadSample = async () => {
     setFileStatus(i18n.t('fileStatusLoadingSample'));
     try {
-      const resp = await fetch('/sample-timeline.json');
+      const resp = await fetch(`${import.meta.env.BASE_URL}sample-timeline.json`);
       if (!resp.ok) throw new Error('Sample not found');
       const data = await resp.json();
       loadTimelineData(data, i18n.t('sampleSourceName'));
